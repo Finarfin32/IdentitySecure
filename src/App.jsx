@@ -42,10 +42,8 @@ const handleLogIn = async () => {
   return (
     <section>
       <h1>Autentykacja test</h1>
-      <button>Zaarejestruj się</button>
-      <button>Zaloguj się</button>
-      <button onClick={handleSignIn}>Sign-in</button>
-      <button onClick={handleLogIn}>Log-in</button>
+      <button onClick={handleSignIn}>Zaarejestruj się</button>
+      <button onClick={handleLogIn}>Zaloguj się</button>
     </section>
   );
 }
