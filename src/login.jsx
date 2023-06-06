@@ -11,7 +11,7 @@ function Login() {
   const [tokenFromQR, setTokenFromQR] = useState(null);
   const [email, setEmail] = useState("");
   useEffect(() => {
-    faceio = new faceIO("fioacea4");
+    faceio = new faceIO("fioa8bc1");
   }, []);
 
   const handleLogIn = async () => {
@@ -36,7 +36,7 @@ function Login() {
     return <div>Pomyślnie zalogowano użytkownika {email}</div>;
   return (
     <div>
-      {!token && <button onClick={handleLogIn}>Zaloguj się</button>}
+      {!token && <button className="log" onClick={handleLogIn}>Zaloguj się</button>}
       {token && <QRReader setQR={setTokenFromQR}></QRReader>}
     </div>
   );

@@ -5,14 +5,14 @@ import { useDispatch } from "react-redux";
 import QrCodeGenerator from "./qrCodeGenerator.jsx";
 
 function Register() {
-  let faceio = new faceIO("fioacea4");
+  let faceio = new faceIO("fioa8bc1");
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [token, setToken] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    faceio = new faceIO("fioacea4");
+    faceio = new faceIO("fioa8bc1");
   }, []);
 
   const handleSignIn = async (e) => {
@@ -44,13 +44,13 @@ function Register() {
     <div>
       {!token && (
         <form onSubmit={handleSignIn}>
-          <label>E-mail</label>
+          <label className="label_email">Podaj E-mail</label>
           <input
             required
             onChange={(event) => setEmail(event.target.value)}
             value={email}
           />
-          <button type="submit">Zarejestruj się</button>
+          <button className="reg" type="submit">Zarejestruj się</button>
           <p style={{ color: "red" }}>{error}</p>
         </form>
       )}
