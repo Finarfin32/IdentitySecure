@@ -35,7 +35,7 @@ function Login() {
   if (token === tokenFromQR && token && tokenFromQR)
     return <div>Pomyślnie zalogowano użytkownika {email}</div>;
   return (
-    <div>
+    <div className="container">
       {!token && <button className="log" onClick={handleLogIn}>Zaloguj się</button>}
       {token && <QRReader setQR={setTokenFromQR}></QRReader>}
     </div>

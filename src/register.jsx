@@ -41,11 +41,12 @@ function Register() {
     }
   };
   return (
-    <div>
+    <div className="container">
       {!token && (
         <form onSubmit={handleSignIn}>
-          <label className="label_email">Podaj E-mail</label>
+          <label className="label_email">Podaj adres E-mail</label>
           <input
+          className="register_input"
             required
             onChange={(event) => setEmail(event.target.value)}
             value={email}

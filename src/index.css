@@ -93,11 +93,11 @@ img {
   min-height: 100vh;
   align-items: center;
 }
-.container {
+/* .container {
   margin-inline: auto;
   max-width: 75rem;
   width: 85%;
-}
+} */
 .input__group {
   display: flex;
   margin-top: 2em;
