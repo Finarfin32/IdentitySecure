@@ -46,12 +46,15 @@ function Register() {
         <form onSubmit={handleSignIn}>
           <label className="label_email">Podaj adres E-mail</label>
           <input
-          className="register_input"
+            className="register_input"
             required
             onChange={(event) => setEmail(event.target.value)}
             value={email}
+            style={{ textTransform: "none" }}
           />
-          <button className="reg" type="submit">Zarejestruj się</button>
+          <button className="reg" type="submit">
+            Zarejestruj się
+          </button>
           <p style={{ color: "red" }}>{error}</p>
         </form>
       )}
