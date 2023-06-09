@@ -5,7 +5,6 @@ const QRReader = ({ setQR }) => {
   const delay = 500;
 
   const previewStyle = {
-    height: 240,
     width: 320,
   };
 

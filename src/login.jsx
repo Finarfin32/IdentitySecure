@@ -33,7 +33,7 @@ function Login() {
     }
   };
   if (token === tokenFromQR && token && tokenFromQR)
-    return <div>Pomyślnie zalogowano użytkownika {email}</div>;
+    return <div className="register_succesfull">Pomyślnie zalogowano użytkownika {email}</div>;
   return (
     <div className="container">
       {!token && <button className="log" onClick={handleLogIn}>Zaloguj się</button>}

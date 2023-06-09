@@ -9,7 +9,7 @@ function App() {
   </div>
     <div className="buttons_container">
       <Link className="log" to="/login">Zaloguj się</Link>
-      <Link className="reg" to="/register">Zaarejestruj się</Link>
+      <Link className="reg" to="/register">Zarejestruj się</Link>
     </div>
     </div>
   );

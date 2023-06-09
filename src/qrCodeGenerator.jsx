@@ -29,7 +29,7 @@ const QrCodeGenerator = ({ token }) => {
     <div className="qrcode__container">
       <div ref={qrRef}>{qrcode}</div>
       <div className="input__group">
-        <button onClick={downloadQRCode}>Download QR code</button>
+        <button onClick={downloadQRCode}>Pobierz QR code</button>
       </div>
     </div>
   );
