@@ -17,6 +17,7 @@ function Register() {
 
   const handleSignIn = async (e) => {
     e.preventDefault();
+    setError("");
     try {
       let response = await faceio.enroll({
         locale: "auto",
@@ -27,14 +28,8 @@ function Register() {
       });
 
       setToken(response.facialId);
-      console.log(` Unique Facial ID: ${response.facialId}
-    Enrollment Date: ${response.timestamp}
-    Gender: ${response.details.gender}
-    Age Approximation: ${response.details.age}`);
       const user = { email: email, token: response.facialId };
-      console.log(user);
-      const users = await dispatch(createUser(user));
-      console.log(users);
+      await dispatch(createUser(user));
     } catch (err) {
       setError("Coś poszło nie tak...");
       console.log(err);

@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { QRCodeCanvas } from "qrcode.react";
 
 const QrCodeGenerator = ({ token }) => {
@@ -20,8 +20,9 @@ const QrCodeGenerator = ({ token }) => {
       id="qrCode"
       value={token}
       size={300}
-      bgColor={"#FFFFFF"}
-      level={"H"}
+      bgColor="#FFFFFF"
+      level="H"
+      includeMargin={true}
     />
   );
 
