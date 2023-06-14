@@ -45,7 +45,7 @@ body {
 .container {
   width: 600px;
   height: 400px;
-  border: 2px solid #000;
+  border: 2px solid #a060ad;
   background-color: #80808040;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ button {
 
 .reg {
   color: white;
-  background-color: rgba(104, 85, 224, 1);
+  background-color:#a060ad;
   padding: 10px 20px;
   border-radius: 12px;
   text-transform: uppercase;
@@ -96,7 +96,7 @@ button {
 .log {
   color: rgb(104, 85, 224);
   background-color: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(104, 85, 224, 1);
+  border: 1px solid #a060ad;
   padding: 10px 20px;
   margin-right: 10px;
   border-radius: 12px;
@@ -105,21 +105,21 @@ button {
 
 .reg:hover {
   color: white;
-  box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+  box-shadow: 0 0 20px #a060ad;
   background-color: rgb(144, 23, 75);
 }
 
 .log:hover {
   color: white;
-  box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+  box-shadow: 0 0 20px #a060ad;
   background-color: rgb(144, 23, 75);
 }
 
 
 button:hover {
   color: white;
-  box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
-  background-color: rgba(104, 85, 224, 1);
+  box-shadow: 0 0 20px #a060ad;
+  background-color: #a060ad;
 }
 
 .buttons_container {
@@ -135,15 +135,9 @@ button:hover {
     font-size: 25px;
 }
 
-/* .logo {
-  flex: 1;
-  padding-left: 10px;
-} */
-
 .logo img {
-  /* max-width: 100%; */
-  max-width: 250px;
   height: auto;
+  margin-bottom: 15px;
 }
 
 .buttons {
@@ -163,7 +157,7 @@ button:hover {
   background-color: rgb(91, 91, 92);
   padding: 10px 20px;
   border-radius: 12px;
-  border-color: white;
+  border-color: #a060ad;
   border-width: 1px;
   text-transform: uppercase;
 }
@@ -174,7 +168,7 @@ button:hover {
   background-color: rgb(91, 91, 92);
   padding: 10px 20px;
   border-radius: 12px;
-  border-color: white;
+  border-color: #a060ad;
   border-width: 1px;
   text-transform: uppercase;
 }
